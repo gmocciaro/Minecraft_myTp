@@ -13,5 +13,13 @@ Set a new location based on the current OP coordinates.
 
 example:
 ```/setgo village```
-will set a new location called village with the current OP's coordinates
+will set a new location called 'village' with the current OP's coordinates
+
+#### `/delGo [name]`
+
+Delete an existing location
+
+example:
+```/delGo village```
+delete the locaton called 'village'
 
