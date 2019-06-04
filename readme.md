@@ -3,6 +3,8 @@
   - Player can teleport to specific points, previously created by an OPerator.
   - Players can teleport to each others
 
+All command are case insensitive.
+
 ## Available commands
 
 ### For OPs:
@@ -12,7 +14,7 @@
 Set a new location based on the current OP coordinates.
 
 example:
-```/setgo village```
+```/setGo village```
 will set a new location called 'village' with the current OP's coordinates
 
 #### `/delGo [name]`
