@@ -1,0 +1,22 @@
+name: myTp
+version: 1.0
+author: gmocciaro
+
+main: me.myTp.main
+
+commands:
+  go:
+    description: go to places
+    usage: "Usage: /go [location]"
+  setGo:
+    description: set where to go
+    usate: "Usage: /setGo [location]"
+  goList:
+    description: list of available locations
+    usate: "Usage: /goList"
+  delGo:
+    description: delete a locations
+    usate: "Usage: /delGo [location]"
+  goTo:
+    description: move the user to another user
+    usate: "Usage: /goto [username]"
