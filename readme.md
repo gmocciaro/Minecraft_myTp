@@ -23,3 +23,28 @@ example:
 ```/delGo village```
 delete the locaton called 'village'
 
+### For users:
+
+#### `/goList`
+
+List all available locations
+
+example:
+```/goList```
+list of all available location, pipe separated
+
+#### `/go [location]`
+
+Teleport to a location
+
+example:
+```/go village```
+teleport the player to the coordinates saved as 'village'
+
+#### `/goTo [username]`
+
+Teleports current player to another player
+
+example:
+```/goTo user123```
+teleports the current user to the user123's coordinates
