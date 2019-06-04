@@ -31,7 +31,7 @@ public class main extends JavaPlugin {
                 String locationName = args[0];
                 File file = new File("plugins//myTp//" + locationName + ".yml");
                 if(!file.exists()) {
-                    sender.sendMessage(this.pr + "Luogo non trovato :(, usa /goList per la lista dei luoghi disponibili");
+                    sender.sendMessage(this.pr + "Location not found :(, use /goList to check available locations");
                     return true;
                 }
 
@@ -47,7 +47,7 @@ public class main extends JavaPlugin {
                 World world = Bukkit.getWorld(cfg.getString("Spawn.WORLD"));
                 loc.setWorld(world);
                 p.teleport(loc);
-                p.sendMessage(this.pr + "Benvenuto a " + locationName + "!");
+                p.sendMessage(this.pr + "Welcome to " + locationName + "!");
                 return true;
             }
         }
@@ -72,11 +72,11 @@ public class main extends JavaPlugin {
                     p.sendMessage(this.pr + locations);
                     return true;
                 } else {
-                    p.sendMessage(this.pr + "Non esistono luoghi ancora...");
+                    p.sendMessage(this.pr + "There are no locations yet...");
                     return true;
                 }
             } else {
-                p.sendMessage(this.pr + "Non esistono luoghi ancora...");
+                p.sendMessage(this.pr + "There are no locations yet...");
                 return true;
             }
         }
@@ -89,12 +89,12 @@ public class main extends JavaPlugin {
                 // Working with file
                 File file = new File("plugins//myTp//" + locationName + ".yml");
                 if(!file.exists()) {
-                    p.sendMessage(this.pr + "Questo luogo non esiste!");
+                    p.sendMessage(this.pr + "This location does not exist!");
                     return true;
                 }
 
                 file.delete();
-                p.sendMessage(this.pr + "Luogo " + locationName + " eliminato con successo");
+                p.sendMessage(this.pr + "Location " + locationName + " successfully deleted!");
 
                 return true;
             }
@@ -141,7 +141,7 @@ public class main extends JavaPlugin {
                     var19.printStackTrace();
                 }
 
-                p.sendMessage(this.pr + "Luogo salvato come " + locationName);
+                p.sendMessage(this.pr + "Location successfully saved as " + locationName);
 
                 return true;
             }
@@ -167,7 +167,7 @@ public class main extends JavaPlugin {
                     }
                 }
 
-                p.sendMessage(this.pr + "Utente " + playerName + " non trovato");
+                p.sendMessage(this.pr + "User " + playerName + " not found");
                 return true;
             }
         }
