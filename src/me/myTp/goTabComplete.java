@@ -32,10 +32,6 @@ public class goTabComplete implements TabCompleter {
             return list;
         }
 
-        if(cmd.getName().equalsIgnoreCase("go")) {
-
-        }
-
         return null;
     }
 
