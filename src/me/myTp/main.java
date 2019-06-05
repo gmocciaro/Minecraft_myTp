@@ -16,7 +16,8 @@ public class main extends JavaPlugin {
 
     private String pr = "§7[§4Server§7]§9 ";
     public void onEnable() {
-
+        // Adding go completion
+        getCommand("go").setTabCompleter(new goTabComplete());
     }
 
     public void onDisable() {
