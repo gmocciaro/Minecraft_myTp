@@ -12,12 +12,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 import java.io.IOException;
 
-public class main extends JavaPlugin {
+public class Main extends JavaPlugin {
 
     private String pr = "§7[§4Server§7]§9 ";
     public void onEnable() {
         // Adding go completion
-        getCommand("go").setTabCompleter(new goTabComplete());
+        getCommand("go").setTabCompleter(new GoTabComplete());
     }
 
     public void onDisable() {

@@ -2,7 +2,7 @@ name: myTp
 version: 1.0
 author: gmocciaro
 
-main: me.myTp.main
+main: me.myTp.Main
 
 commands:
   go:

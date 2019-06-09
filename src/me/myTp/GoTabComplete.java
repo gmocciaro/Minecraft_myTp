@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class goTabComplete implements TabCompleter {
+public class GoTabComplete implements TabCompleter {
 
     public List<String> onTabComplete(CommandSender sender, Command cmd, String cmdlabel, String[] args){
         Player p = (Player)sender;
